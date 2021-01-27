@@ -6,10 +6,9 @@ function App() {
 
   //config script onesignal
   window.OneSignal = window.OneSignal || [];
-  const OneSignal = Window.OneSignal;
+  const OneSignal = window.OneSignal;
 
   useEffect(() => {
-
     OneSignal.push(() => {
       OneSignal.init(
         {
@@ -34,7 +33,6 @@ function App() {
         })
       );
     });
-
   },[OneSignal])
 
   return (
